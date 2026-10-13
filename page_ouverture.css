@@ -1,0 +1,88 @@
+body{
+    background-image: url(SS23__HS_Y7-aGBZInlJThABGiAp3OtxQxI_vl_zO8shOr-LNSyR8MKLqHES0KWvLADzNvX3fsE4zLAgw-NicURHY_JaMi6TvH-PeEJD5ojK3YBwjaAZXglTxkfEKgXvh6MnX4hjLBuBIVcUeL9kUPBT5pMFHHp2thLlaDQTHs7i4kc3pxIu5qGWrMrgr_H_.jpg);
+}
+.nav_bar{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    width: 70%;
+    align-items: center;
+}
+.logo img{
+    width: 200px;
+    height: 200px;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    list-style: none;
+    margin-right: 50px;
+    color: white;
+}
+h1{
+    color: white;
+    width: 500px;
+    margin-right: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 80px;
+}
+h3{
+    color: white;
+    width: 500px;
+    margin-right: auto;
+    font-family: 'franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    
+}
+BUTTON{
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(90, 115, 240);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 0px;
+}
+
+.image img{
+    width: 400px;
+    height: 400px;
+    margin-right: 0px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.menu ul li{
+    margin: 0 30px;
+    text-align: center;
+}
+main{
+    margin-left: 10px;
+}
+.presentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+h4{
+    color: white;
+    width: 500px;
+    margin-right: auto;
+    font-family: 'franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2{
+    color: white;
+    width: 500px;
+    margin-right: auto;
+    font-family: 'franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
