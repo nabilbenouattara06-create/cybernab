@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    color: #f4f7ff;
+    font-family: Arial, Helvetica, sans-serif;
+    background:
+        linear-gradient(110deg, rgba(3, 8, 30, 0.9), rgba(4, 13, 43, 0.62)),
+        url("arriere-plan-particules-technologiques-abstraites-realistes_23-2148431735.avif") center / cover fixed;
+}
+
+.nav_bar {
+    width: min(1120px, calc(100% - 48px));
+    min-height: 112px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.logo img {
+    display: block;
+    width: 132px;
+    height: 132px;
+    object-fit: contain;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 14px;
+    border-radius: 8px;
+    color: #f4f7ff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 180ms ease, color 180ms ease;
+}
+
+.menu a:hover,
+.menu a:focus-visible {
+    color: #9fe8ff;
+    background: rgba(74, 157, 255, 0.16);
+}
+
+main {
+    width: min(1000px, calc(100% - 48px));
+    margin: 24px auto 64px;
+}
+
+.titre {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.titre h1 {
+    margin: 0 0 8px;
+    color: #fff;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: clamp(38px, 5vw, 62px);
+}
+
+.titre p {
+    margin: 0;
+    color: #d8e2f5;
+    font-size: 17px;
+}
+
+.formulaire {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.85fr);
+    align-items: start;
+    gap: 22px;
+}
+
+.your_mail,
+.contact,
+.hours {
+    border: 1px solid rgba(127, 177, 255, 0.22);
+    border-radius: 14px;
+    background: rgba(8, 20, 55, 0.72);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.your_mail {
+    padding: 26px;
+    text-align: left;
+}
+
+.your_mail h3,
+.contact h3,
+.hours h3 {
+    margin: 0 0 18px;
+    color: #fff;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 21px;
+}
+
+.your_mail p {
+    margin: 14px 0 6px;
+    color: #d8e2f5;
+    font-size: 14px;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid rgba(156, 184, 235, 0.3);
+    border-radius: 8px;
+    outline: none;
+    color: #f4f7ff;
+    background: rgba(3, 9, 29, 0.72);
+    font: inherit;
+    transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #9baaca;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #65baff;
+    box-shadow: 0 0 0 3px rgba(53, 145, 255, 0.16);
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.your_mail button {
+    margin-top: 18px;
+    padding: 12px 22px;
+    border: 1px solid rgba(131, 205, 255, 0.45);
+    border-radius: 8px;
+    color: #fff;
+    background: linear-gradient(135deg, #2878ec, #2451c8);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.your_mail button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(30, 105, 255, 0.28);
+}
+
+.contact_hours {
+    display: grid;
+    gap: 18px;
+}
+
+.contact,
+.hours {
+    padding: 24px;
+}
+
+.contact img {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin: 6px 10px 0 0;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+.contact p,
+.hours p {
+    display: inline-block;
+    margin: 8px 0;
+    color: #d8e2f5;
+    font-size: 15px;
+    line-height: 1.5;
+    vertical-align: middle;
+}
+
+.hours p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+    .nav_bar {
+        width: min(100% - 32px, 520px);
+        min-height: auto;
+        padding: 12px 0;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .logo img {
+        width: 96px;
+        height: 96px;
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2px;
+    }
+
+    .menu a {
+        padding: 9px 10px;
+        font-size: 14px;
+    }
+
+    main {
+        width: min(100% - 36px, 520px);
+        margin: 20px auto 48px;
+    }
+
+    .formulaire {
+        grid-template-columns: 1fr;
+    }
+
+    .your_mail,
+    .contact,
+    .hours {
+        padding: 20px;
+    }
+}
